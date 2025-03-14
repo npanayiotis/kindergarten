@@ -1,0 +1,103 @@
+# Kindergarten Booking Platform Project Structure
+
+```
+kindergarten-booking/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── assets/
+│       └── images/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Footer.jsx
+│   │   ├── layout/
+│   │   │   ├── MainLayout.jsx
+│   │   │   └── AuthLayout.jsx
+│   │   ├── kindergartens/
+│   │   │   ├── KindergartenCard.jsx
+│   │   │   ├── KindergartenList.jsx
+│   │   │   ├── KindergartenFilter.jsx
+│   │   │   ├── KindergartenDetails.jsx
+│   │   │   └── KindergartenMap.jsx
+│   │   ├── booking/
+│   │   │   ├── AppointmentCalendar.jsx
+│   │   │   ├── BookingForm.jsx
+│   │   │   ├── TimeSlotPicker.jsx
+│   │   │   └── BookingConfirmation.jsx
+│   │   ├── auth/
+│   │   │   ├── SignupForm.jsx
+│   │   │   ├── LoginForm.jsx
+│   │   │   └── ForgotPassword.jsx
+│   │   └── profile/
+│   │       ├── UserProfile.jsx
+│   │       ├── ChildDetails.jsx
+│   │       └── AppointmentHistory.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Search.jsx
+│   │   ├── KindergartenDetails.jsx
+│   │   ├── Booking.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── UserDashboard.jsx
+│   │   └── AboutUs.jsx
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── auth.service.js
+│   │   ├── kindergarten.service.js
+│   │   └── booking.service.js
+│   ├── context/
+│   │   ├── AuthContext.js
+│   │   └── AppContext.js
+│   ├── utils/
+│   │   ├── helpers.js
+│   │   ├── validation.js
+│   │   └── constants.js
+│   ├── styles/
+│   │   └── tailwind.css
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── Routes.jsx
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+└── README.md
+
+
+
+PROJECT SETUP
+
+# Create a new React project with Vite (faster than Create React App)
+npm create vite@latest kindergarten-booking -- --template react
+
+# Navigate to the project directory
+cd kindergarten-booking
+
+# Install core dependencies
+npm install
+
+# Install Tailwind CSS and its dependencies
+npm install -D tailwindcss postcss autoprefixer
+
+# Initialize Tailwind CSS
+npx tailwindcss init -p
+
+# Install routing and other essential packages
+npm install react-router-dom axios @heroicons/react date-fns
+
+# Install form handling and validation
+npm install react-hook-form
+
+# Install additional UI components
+npm install react-datepicker react-select
+```
+
+
