@@ -79,7 +79,7 @@ const Navbar = () => {
               <div className="flex items-center space-x-4">
                 <Link
                   to="/login"
-                  className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
+                  className="px-4 py-2 rounded-md border border-emerald-500 text-emerald-600 hover:bg-emerald-50 transition-colors font-extrabold"
                 >
                   Login
                 </Link>
